@@ -16,6 +16,12 @@
 #
 default: &default
   adapter: postgresql
+  password: 12345
+  port: 5432
+  host: localhost
+  username: postgres
+  password: 12345
+  timeout: 5000
   encoding: unicode
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
@@ -23,7 +29,7 @@ default: &default
 
 development:
   <<: *default
-  database: go2learnit_development
+  database: go2learnit_dev
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -78,8 +84,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: go2learnit_production
-  username: go2learnit
-  password: <%= ENV['GO2LEARNIT_DATABASE_PASSWORD'] %>
+# production:
+#   <<: *default
+#   database: go2learnit_production
+#   username: go2learnit
+#   password: <%= ENV['GO2LEARNIT_DATABASE_PASSWORD'] %>
