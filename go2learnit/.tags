@@ -5,14 +5,30 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/app/assets/stylesheets/application.css	/^ * Any CSS and SCSS file within this directory, lib\/assets\/stylesheets, vendor\/assets\/stylesheets,$/;"	function	line:5
+ApplicationCable	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/app/channels/application_cable/channel.rb	/^module ApplicationCable$/;"	module	line:1
+Channel	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/app/channels/application_cable/channel.rb	/^  class Channel < ActionCable::Channel::Base$/;"	class	line:2	class:ApplicationCable
+ApplicationCable	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/app/channels/application_cable/connection.rb	/^module ApplicationCable$/;"	module	line:1
+Connection	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/app/channels/application_cable/connection.rb	/^  class Connection < ActionCable::Connection::Base$/;"	class	line:2	class:ApplicationCable
 ApplicationController	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	class	line:1
 ApplicationHelper	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	module	line:1
+ApplicationJob	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/app/jobs/application_job.rb	/^class ApplicationJob < ActiveJob::Base$/;"	class	line:1
+ApplicationMailer	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/app/mailers/application_mailer.rb	/^class ApplicationMailer < ActionMailer::Base$/;"	class	line:1
+ApplicationRecord	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/app/models/application_record.rb	/^class ApplicationRecord < ActiveRecord::Base$/;"	class	line:1
+system!	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/bin/setup	/^def system!(*args)$/;"	method	line:9
+system!	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/bin/update	/^def system!(*args)$/;"	method	line:9
 Go2learnit	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/application.rb	/^module Go2learnit$/;"	module	line:9
 Application	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/application.rb	/^  class Application < Rails::Application$/;"	class	line:10	class:Go2learnit
+development	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/cable.yml	/^development:$/;"	function	line:1
+adapter	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/cable.yml	/^  adapter: async$/;"	function	line:2
+test	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/cable.yml	/^test:$/;"	function	line:4
+adapter	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/cable.yml	/^  adapter: async$/;"	function	line:5
+production	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/cable.yml	/^production:$/;"	function	line:7
+adapter	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/cable.yml	/^  adapter: redis$/;"	function	line:8
+url	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/cable.yml	/^  url: redis:\/\/localhost:6379\/1$/;"	function	line:9
 default	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/database.yml	/^default: &default$/;"	function	line:17
 adapter	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/database.yml	/^  adapter: postgresql$/;"	function	line:18
 encoding	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/database.yml	/^  encoding: unicode$/;"	function	line:19
-pool	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/database.yml	/^  pool: 5$/;"	function	line:22
+pool	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/database.yml	/^  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>$/;"	function	line:22
 development	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/database.yml	/^development:$/;"	function	line:24
 database	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/database.yml	/^  database: go2learnit_development$/;"	function	line:26
 test	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/database.yml	/^test:$/;"	function	line:58
@@ -24,9 +40,9 @@ password	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/
 en	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/locales/en.yml	/^en:$/;"	function	line:22
 hello	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/locales/en.yml	/^  hello: "Hello world"$/;"	function	line:23
 development	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/secrets.yml	/^development:$/;"	function	line:13
-secret_key_base	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/secrets.yml	/^  secret_key_base: d88df43c2a35fcb37277f0e48629110fc6439c64020c82d98cb752082ba15bb589958f854ac067ba9c589604e056b26cef9f8fdc621e2beb6f2a736c9183233f$/;"	function	line:14
+secret_key_base	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/secrets.yml	/^  secret_key_base: 799b3763e280cdda9140a7029ee33ac89f4bd994be920fc874e7b4a791586b99eb5383afe11b605c8d02a1dd020e71fc2b6567673557fc9b81922762ea8533b9$/;"	function	line:14
 test	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/secrets.yml	/^test:$/;"	function	line:16
-secret_key_base	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/secrets.yml	/^  secret_key_base: d35d7ed5ad4959c47f6651afbe30a5d2c8d99baff8946d7f3f748fa3615345e635792cd7d76c9623dfb1dbcfd3518e814698a7d1e42314df053eb6784e1afcf8$/;"	function	line:17
+secret_key_base	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/secrets.yml	/^  secret_key_base: fac80b50c1b28e3a99b332aba01f09e80b520ae479c41ad064a5ae7907a3646c239549871e14826f2914f16ff5b7314aa0f51faa4e431fbccee545ca624f3cdb$/;"	function	line:17
 production	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/secrets.yml	/^production:$/;"	function	line:21
 secret_key_base	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/config/secrets.yml	/^  secret_key_base: <%= ENV["SECRET_KEY_BASE"] %>$/;"	function	line:22
 html	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/public/404.html	/^<html>$/;"	function	line:2
@@ -61,4 +77,5 @@ div	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/publi
 div	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/public/500.html	/^    <div>$/;"	function	line:60
 h	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/public/500.html	/^      <h1>We're sorry, but something went wrong.<\/h1>$/;"	function	line:61
 p	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/public/500.html	/^    <p>If you are the application owner check the logs for more information.<\/p>$/;"	function	line:63
+README	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/README.md	/^# README$/;"	function	line:1
 ActiveSupport	/Volumes/Arquivos/Sergio/Documentos/Estudos/Ruby/go2learnit/go2learnit/test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	class	line:5
