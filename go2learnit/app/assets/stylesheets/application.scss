@@ -15,3 +15,17 @@
  */
 
 @import "bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+body, .btn, .painel-title{
+  font-weight: 300 !important;
+}
+
+.painel-header{
+  font-weight: 400 !important;
+  font-size: 2.7em;
+}
+
+.painel-title{
+  font-size: 18px;
+}
