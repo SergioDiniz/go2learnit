@@ -16,6 +16,24 @@
 
 @import "bootstrap";
 @import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'collors';
+
+
+
+.cor-vermelho-morto,
+a.cor-vermelho-morto {
+  color: $vermelho-morto;
+}
+
+.cor-cinza-morto,
+a.cor-cinza-morto{
+  color: $cinza-morto;
+}
+
+.text-center, a.text-center {
+    text-align: center !important;
+}
+
 
 body, .btn, .painel-title{
   font-weight: 300 !important;
@@ -23,6 +41,9 @@ body, .btn, .painel-title{
 
 .painel-header{
   font-weight: 400 !important;
+}
+
+h1.painel-header{
   font-size: 2.7em;
 }
 

@@ -1,0 +1,43 @@
+@import 'collors';
+
+.menu-top{
+  width: 100%;
+  height: 4em;
+  border-bottom: solid 1px #e3e1e1;
+  .navbar-right{
+    float: right;
+  }
+
+  .navbar{
+    padding-top: 1rem
+  }
+
+  a{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  a.link-menu{
+    color: $cinza-morto-forte;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  a.link-menu:hover{
+    color: black;
+  }
+}
+
+
+.menu-home{
+
+
+
+
+
+  .navbar{
+    padding-top: 0.8rem
+  }
+
+
+}
