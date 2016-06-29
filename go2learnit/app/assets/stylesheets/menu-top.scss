@@ -111,11 +111,11 @@
     display: none;
     z-index: 9999;
     background-color: rgb(2, 182, 222);
-    overflow: hidden;
+    // overflow: hidden;
 
     .menu{
       text-align: center;
-      margin-top: 50%;
+      margin-top: 3rem;
       a {
         color: white !important;
         font-size: 2rem;

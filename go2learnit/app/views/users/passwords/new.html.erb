@@ -1,16 +1,37 @@
-<h2>Forgot your password?</h2>
+<% title 'Forgot your password?' %>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+<div class="container">
+  <%= render 'users/shared/menu-logo' %>
+</div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+<div class="container form-registration">
+
+  <div class="col-lg-4 col-lg-offset-4">
+    <h2 class="painel-header text-center">Forgot your password?</h2>
+    <hr>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
+  <div class="col-lg-4 col-lg-offset-4 col-sm-8 col-sm-offset-2 form-new-user">
+    <br>
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+      <%= devise_error_messages! %>
 
-<%= render "users/shared/links" %>
+      <fieldset class="form-group">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, required: true, class: 'form-control' %>
+      </fieldset>
+
+      <div class="actions">
+        Send me reset password instructions
+        <%= f.submit "Send me!", class: 'btn btn-success btn-lg btn-block' %>
+      </div>
+    <% end %>
+    <br>
+    <div class="text-center">
+      <p><%= link_to "Log in", new_session_path(resource_name), class: 'cor-vermelho-morto' %></p>
+      <p><%= link_to "Sign up", new_registration_path(resource_name), class: 'cor-cinza-morto' %></p>
+    </div>
+
+  </div>
+
+</div>

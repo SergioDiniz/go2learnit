@@ -1,7 +1,7 @@
 @import 'collors';
 
 .menu-left-area{
-  position: absolute;
+  position: fixed;
   width: $tamanho-menu;
   height: 100%;
   border-right: solid 1px $borda-cinza;

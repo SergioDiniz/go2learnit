@@ -1,39 +1,76 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<% title 'Account' %>
+<%= render 'users/menu-top' %>
+<%= render 'users/menu-left' %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= devise_error_messages! %>
+<div class="page-content">
+  <div class="container form-registration">
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <div class="col-lg-8 col-lg-offset-2">
+      <h1 class="painel-header text-center">Account</h1>
+      <br>
+      <br>
+    </div>
+
+    <div class="col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2 form-new-user">
+      <br>
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+        <%= devise_error_messages! %>
+
+        <div class="row">
+          <fieldset class="form-group col-lg-6">
+            <div class="field">
+              <%= f.text_field :first_name, autofocus: true, class: 'form-control', required: true, placeholder: 'First Name' %>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group col-lg-6">
+            <div class="field">
+              <%= f.text_field :last_name, autofocus: true, class: 'form-control', required: true, placeholder: 'Last Name' %>
+            </div>
+          </fieldset>
+        </div>
+
+        <fieldset class="form-group">
+          <div class="field">
+            <%= f.text_field :username, autofocus: true, class: 'form-control', required: true, placeholder: 'Username' %>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+        </fieldset>
+
+        <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+          <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+        <% end %>
+
+        <fieldset class="form-group">
+          <i>Leave blank if you don't want to change it</i><br />
+          <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: 'Password' %>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', placeholder: 'Confirm Password' %>
+        </fieldset>
+
+        <hr>
+        <fieldset class="form-group">
+          <i>We need your current password to confirm your changes</i><br />
+          <%= f.password_field :current_password, autocomplete: "off", class: 'form-control', placeholder: 'Current Password' %>
+        </fieldset>
+
+        <fieldset class="actions">
+          <%= f.submit "Update", class: 'btn btn-success btn-block btn-lg' %>
+        </fieldset>
+      <% end %>
+
+      <div class="text-right">
+        <br>
+        <p><%= link_to "Cancel my account", registration_path(resource_name), class: 'cor-cinza-morto', data: { confirm: "Are you sure?" }, method: :delete %></p>
+      </div>
+
+      <br>
+    </div>
+
   </div>
-
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
-<% end %>
-
-<h3>Cancel my account</h3>
-
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-<%= link_to "Back", :back %>
+</div>
