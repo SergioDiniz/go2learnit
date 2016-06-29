@@ -1,3 +1,3 @@
-# go2learnit
+# Go2Learn
 Making a social network for students
 
