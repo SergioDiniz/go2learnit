@@ -2,8 +2,10 @@ source 'https://rubygems.org'
 
 
 gem 'bootstrap', '~> 4.0.0.alpha3'
+gem "font-awesome-rails"
 gem 'rails-assets-tether', '>= 1.1.0'
 gem "devise", '~> 4.0.0.rc1'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 5.0.0.rc2', '< 5.1'

@@ -1,0 +1,29 @@
+@import 'collors';
+
+.menu-left-area{
+  position: absolute;
+  width: $tamanho-menu;
+  height: 100%;
+  border-right: solid 1px $borda-cinza;
+  display: table-column;
+  clear: both;
+
+
+  .op-menu{
+    background-color: rgb(240, 114, 114);
+    overflow: hidden;
+    width: $tamanho-menu;
+
+    .op-select{
+      width: 150px;
+    }
+
+    transition: width 0.2s;
+  }
+
+  .op-menu:hover{
+    background-color: rgb(255, 134, 6);
+    width: 150px;
+
+  }
+}

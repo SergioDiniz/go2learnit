@@ -1,9 +1,38 @@
 <% title current_user.first_name %>
 
 <div class="menu-top menu-top-user">
-  <nav class="navbar navbar-right">
-    <div class="nav navbar-nav">
-      <%= link_to 'Log out', destroy_user_session_path, class: 'link-menu', method: :delete, data: { confirm: 'Are you sure?'} %>
+
+  <nav class="navbar navbar-left">
+    <div class="nav navbar-nav menu-logo">
+      <li class="nav-item">
+        <%= link_to 'Go To Learn', user_path, class: 'nav-link' %>
+      </li>
     </div>
   </nav>
+
+  <nav class="navbar navbar-right">
+    <div class="nav navbar-nav">
+
+      <li class="nav-item" id="btn-menu">
+        <div id="op-menu-responsive">
+          <a class="nav-link">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </a>
+          <div class="menu-responsive">
+            <div class="menu">
+              <nav>
+                <ul class="nav">
+                  <li><%= link_to 'Home', user_path %></li>
+                  <li><%= link_to 'Account', edit_user_registration_path %></li>
+                  <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </li>
+
+    </div>
+  </nav>
+
 </div>
