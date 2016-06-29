@@ -10,6 +10,7 @@
 
 .page-content{
   position: relative;
+  border-left: solid 1px $borda-cinza;
   margin-left: $tamanho-menu;
   width: calc(100% - #{$tamanho-menu});
   overflow-x: hidden;

@@ -1,43 +1,101 @@
 @import 'collors';
 
 .menu-left-area{
-  position: fixed;
+  position: absolute;;
   width: $tamanho-menu;
   height: 100%;
   border-right: solid 1px $borda-cinza;
   display: table-column;
   clear: both;
+  z-index: 8888;
 
+  .m-logo{
+    text-align: center;
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+
+  #m-home{
+    background-color: #FA7893;
+  }
+
+  #m-feed{
+    background-color: #F87491;
+  }
+
+  #m-topics{
+    background-color: #F56E8D;
+  }
+
+  #m-ftopics{
+    background-color: #EF6588;
+  }
+
+  #m-friends{
+    background-color: #EB5B84;
+  }
+
+  #m-message{
+    background-color: #E5517E;
+  }
+
+  #m-blog{
+    background-color: #DF4578;
+  }
+
+  #m-annotations{
+    background-color: #DB3C73;
+  }
+
+  #m-events{
+    background-color: #D6356F;
+  }
+
+  #m-acc{
+    background-color: #D32E6B;
+  }
+
+  #m-signout{
+    background-color: #CE2768;
+  }
 
   .op-menu{
-    background-color: rgb(240, 114, 114);
+    // background-color: rgb(240, 114, 114);
     overflow: hidden;
     width: $tamanho-menu;
+    transition: all 0.3s;
 
     .op-select{
-      width: 150px;
+      width: 200px;
       i{
         float: left;
-        font-size: 2rem;
+        font-size: $tamanho-icone-menu;
         text-align: center;
         width: $tamanho-menu;
-        line-height: 4rem;
+        line-height: $tamanho-line-icon-menu;
       }
+
       span{
         display: none;
       }
+
+      a{
+        color: white;
+        text-decoration: none;
+      }
     }
 
-    transition: width 0.2s;
+
   }
 
   .op-menu:hover{
-    background-color: rgb(255, 134, 6);
-    width: 150px;
+    background-color: black;
+    width: 200px;
     .op-select{
       span{
         display: block;
-        line-height: 4rem;
+        line-height: $tamanho-line-icon-menu;
         padding-left: calc(#{$tamanho-menu} + 1rem) !important;
       }
     }

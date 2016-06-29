@@ -34,27 +34,9 @@
 
 
 .menu-top-user{
-  width: calc(100% - #{$tamanho-menu});
-  float: right;
+  // width: calc(100% - #{$tamanho-menu});
+  // float: right;
 }
-
-.menu-home{
-
-  .container{
-    padding: 0 !important;
-  }
-
-  .navbar{
-    padding: 0;
-    padding-top: 0.8rem;
-    h2{
-      margin-top: 0.5rem;
-      font-size: 1.2rem !important;
-    }
-  }
-
-}
-
 
 .menu-logo{
   a, a:hover{
@@ -63,7 +45,6 @@
     text-decoration: none;
   }
 }
-
 
 #op-menu-responsive{
   display: none;
@@ -126,6 +107,21 @@
       }
     }
 
+  }
+
+  .menu-home{
+    .container{
+      padding: 0 !important;
+    }
+
+    .navbar{
+      padding: 0;
+      padding-top: 0.8rem;
+      h2{
+        margin-top: 0.5rem;
+        font-size: 1.2rem !important;
+      }
+    }
   }
 
 

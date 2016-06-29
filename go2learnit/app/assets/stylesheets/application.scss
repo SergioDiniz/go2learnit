@@ -21,7 +21,6 @@
 @import url('http://www.bootbundle.com/bootbundle/icon-fonts/octicons/octicons.css');
 @import "font-awesome";
 
-
 * {
   font-family: 'Proxima Nova', Helvetica, sans-serif;
   font-weight: 300 !important;
@@ -29,12 +28,9 @@
 
 }
 
-
 .text-center, a.text-center {
     text-align: center !important;
 }
-
-
 
 h1.painel-header{
   font-size: 3em;
@@ -42,4 +38,8 @@ h1.painel-header{
 
 .painel-title{
   font-size: 18px;
+}
+
+.container-flash{
+  margin-top: 0.4rem;
 }
