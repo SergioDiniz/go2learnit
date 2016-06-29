@@ -1,3 +1,14 @@
 $vermelho-morto: #fe6871;
 $cinza-morto: #acacac;
 $cinza-morto-forte: #8a8888;
+
+
+.cor-vermelho-morto,
+a.cor-vermelho-morto {
+  color: $vermelho-morto;
+}
+
+.cor-cinza-morto,
+a.cor-cinza-morto{
+  color: $cinza-morto;
+}

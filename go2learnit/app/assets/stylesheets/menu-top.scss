@@ -8,6 +8,10 @@
     float: right;
   }
 
+  .navbar-left{
+    float: left;
+  }
+
   .navbar{
     padding-top: 1rem
   }
@@ -31,13 +35,17 @@
 
 .menu-home{
 
-
-
-
-
   .navbar{
     padding-top: 0.8rem
   }
 
+}
 
+
+.menu-logo{
+  a, a:hover{
+    font-weight: 700 !important;
+    color: black;
+    text-decoration: none;
+  }
 }

@@ -17,34 +17,27 @@
 @import "bootstrap";
 @import 'https://fonts.googleapis.com/css?family=Roboto';
 @import 'collors';
+@import 'font-face';
 
 
 
-.cor-vermelho-morto,
-a.cor-vermelho-morto {
-  color: $vermelho-morto;
+
+* {
+  font-family: 'Proxima Nova', Helvetica, sans-serif;
+  font-weight: 300 !important;
+  font-style: normal;
+
 }
 
-.cor-cinza-morto,
-a.cor-cinza-morto{
-  color: $cinza-morto;
-}
 
 .text-center, a.text-center {
     text-align: center !important;
 }
 
 
-body, .btn, .painel-title{
-  font-weight: 300 !important;
-}
-
-.painel-header{
-  font-weight: 400 !important;
-}
 
 h1.painel-header{
-  font-size: 2.7em;
+  font-size: 3em;
 }
 
 .painel-title{

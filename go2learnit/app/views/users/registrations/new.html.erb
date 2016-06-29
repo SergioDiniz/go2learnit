@@ -1,9 +1,14 @@
-<%= render 'users/shared/menu-logo' %>
+
+<% title 'New Account' %>
+
+<div class="container">
+  <%= render 'users/shared/menu-logo' %>
+</div>
 
 <div class="container form-registration">
 
   <div class="col-lg-8 col-lg-offset-2">
-    <h1 class="painel-header text-center">Welcome to Go2Learn</h1>
+    <h1 class="painel-header text-center">Welcome To Go2Learn</h1>
     <hr>
   </div>
 
@@ -16,44 +21,45 @@
       <div class="row">
         <fieldset class="form-group col-lg-6">
           <div class="field">
-            <%= f.text_field :first_name, autofocus: true, class: 'form-control', placeholder: 'First Name' %>
+            <%= f.text_field :first_name, autofocus: true, class: 'form-control', required: true, placeholder: 'First Name' %>
           </div>
         </fieldset>
 
         <fieldset class="form-group col-lg-6">
           <div class="field">
-            <%= f.text_field :last_name, autofocus: true, class: 'form-control', placeholder: 'Last Name' %>
+            <%= f.text_field :last_name, autofocus: true, class: 'form-control', required: true, placeholder: 'Last Name' %>
           </div>
         </fieldset>
       </div>
 
       <fieldset class="form-group">
         <div class="field">
-          <%= f.text_field :username, autofocus: true, class: 'form-control', placeholder: 'Username' %>
+          <%= f.text_field :username, autofocus: true, class: 'form-control', required: true, placeholder: 'Username' %>
         </div>
       </fieldset>
 
       <fieldset class="form-group">
         <div class="field">
-          <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: 'Your@Email.com' %>
+          <%= f.email_field :email, autofocus: true, class: 'form-control', required: true, placeholder: 'Your@Email.com' %>
         </div>
       </fieldset>
 
       <fieldset class="form-group">
         <div class="field">
-          <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: "Password (#{@minimum_password_length} characters minimum)" %>
+          <%= f.password_field :password, autocomplete: "off", class: 'form-control', required: true, placeholder: "Password (#{@minimum_password_length} characters minimum)" %>
         </div>
       </fieldset>
 
       <fieldset class="form-group">
         <div class="field">
-          <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', placeholder: 'Confirm Your Password' %>
+          <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', required: true, placeholder: 'Confirm Your Password' %>
         </div>
       </fieldset>
 
       <div class="actions">
         <%= f.submit "Register", class: 'btn btn-success btn-block btn-lg' %>
       </div>
+      <br>
     <% end %>
   </div>
 

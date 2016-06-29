@@ -1,8 +1,12 @@
 <div class="menu-top menu-home">
-  <nav class="navbar navbar-right">
-    <div class="nav navbar-nav">
-      <%= link_to 'Login', new_user_session_path, class: 'link-menu' %>
-      <%= link_to 'Sign up', new_user_registration_path, class: 'btn btn-success' %>
-    </div>
-  </nav>
+  <div class="container">
+    <%= render 'users/shared/menu-logo' %>
+
+    <nav class="navbar navbar-right">
+      <div class="nav navbar-nav">
+        <%= link_to 'Login', new_user_session_path, class: 'link-menu' %>
+        <%= link_to 'Sign up', new_user_registration_path, class: 'btn btn-success' %>
+      </div>
+    </nav>
+  </div>
 </div>
