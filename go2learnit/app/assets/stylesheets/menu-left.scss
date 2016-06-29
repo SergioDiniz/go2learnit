@@ -16,6 +16,16 @@
 
     .op-select{
       width: 150px;
+      i{
+        float: left;
+        font-size: 2rem;
+        text-align: center;
+        width: $tamanho-menu;
+        line-height: 4rem;
+      }
+      span{
+        display: none;
+      }
     }
 
     transition: width 0.2s;
@@ -24,6 +34,12 @@
   .op-menu:hover{
     background-color: rgb(255, 134, 6);
     width: 150px;
-
+    .op-select{
+      span{
+        display: block;
+        line-height: 4rem;
+        padding-left: calc(#{$tamanho-menu} + 1rem) !important;
+      }
+    }
   }
 }
