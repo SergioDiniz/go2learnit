@@ -43,3 +43,16 @@ h1.painel-header{
 .container-flash{
   margin-top: 0.4rem;
 }
+
+.navbar-right, .pull-right{
+  float: right !important;
+}
+
+.navbar-left, .pull-left{
+  float: left !important;
+}
+
+.dropdown-menu.pull-left{
+  right: 0;
+  left: auto;
+}

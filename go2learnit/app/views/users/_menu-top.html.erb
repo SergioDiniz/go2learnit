@@ -10,29 +10,60 @@
     </div>
   </nav>
 
-  <nav class="navbar navbar-right">
-    <div class="nav navbar-nav">
+  <%= render '/users/menu-top-responsive' %>
 
-      <li class="nav-item" id="btn-menu">
-        <div id="op-menu-responsive">
-          <a class="nav-link">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-          </a>
-          <div class="menu-responsive">
-            <div class="menu">
-              <nav>
-                <ul class="nav">
-                  <li><%= link_to 'Home', user_path %></li>
-                  <li><%= link_to 'Account', edit_user_registration_path %></li>
-                  <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
-                </ul>
-              </nav>
+
+  <nav class="navbar navbar-right">
+    <div class="nav navbar-nav menu-logo">
+      <li class="nav-item">
+        <div class="btn-group">
+          <button type="button" class="btn-link icon-notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+            <div class="label-notification">
+              <i class="label label-pill label-danger">3</i>
             </div>
+          </button>
+
+          <div class="dropdown-menu pull-left">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
           </div>
+
+        </div>
+      </li>
+
+      <li class="nav-item hidden-xs-down">
+        <div class="img-perfil">
+          <img src="/images/eu.jpg"  />
+        </div>
+      </li>
+
+      <li class="nav-item hidden-xs-down">
+
+        <%= current_user.first_name %>
+
+        <div class="btn-group">
+          <button type="button" class="btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+          </button>
+          <div class="dropdown-menu pull-left">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
+          </div>
+
         </div>
       </li>
 
     </div>
   </nav>
+
+
+
 
 </div>
