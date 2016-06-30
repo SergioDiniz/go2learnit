@@ -29,6 +29,25 @@
 
 }
 
+
+.img-content-small{
+  margin-top: 0.5rem;
+  width: 2rem !important;
+  height: 2rem !important;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  img{
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    background-attachment: local;
+  }
+}
+
+
 .text-center, a.text-center {
     text-align: center !important;
 }

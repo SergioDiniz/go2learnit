@@ -2,7 +2,7 @@
 
 <div class="page-content">
   <div class="container">
-    <p id="notice"><%= notice %></p>
+    <!-- <p id="notice"><%= notice %></p>
 
     <h1>Groups</h1>
 
@@ -33,5 +33,88 @@
     <br>
 
     <%= link_to 'New Group', new_group_path %>
+
+
+
+     -->
+
+
+
+    <div class="row">
+      <div class="page-title pull-left">
+        <i>Groups</i>
+      </div>
+      <!-- <div class=" pull-right">
+        <div class="navbar">
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a href="#">TODOS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">TECNOLOGIA</a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="list-groups">
+
+
+        <% @groups.each do |group| %>
+          <div class="col-xl-3 col-md-4 col-sm-6">
+            <div class="content-group">
+
+              <div class="info">
+                <div class="name">
+                  <ul class="nav navbar-nav">
+                    <li class="pull-left">
+                      <div class="img-content-small">
+                        <img style="background-image: url('/images/ror.jpg');"  />
+                      </div>
+                    </li>
+                    <li class="name-group">
+                      <%= link_to group.title, group %>
+                    </li>
+                  </ul>
+                </div>
+                <div class="description">
+                    <p>
+                      <%= group.description %>
+                    </p>
+                </div>
+                <div class="create">
+                  <i><%= group.created_at.to_time.strftime('%e %B %Y') %></i>
+                </div>
+              </div>
+
+              <div class="about">
+
+                <div class="icons pull-left">
+                  <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                      <i>2</i>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="author pull-right">
+                  <%= group.user.first_name %>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        <% end %>
+
+
+      </div>
+    </div>
+
   </div>
 </div>
