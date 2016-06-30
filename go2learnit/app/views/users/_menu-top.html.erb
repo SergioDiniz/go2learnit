@@ -2,7 +2,7 @@
 
 <div class="menu-top menu-top-user">
 
-  <nav class="navbar navbar-left">
+  <nav class="navbar navbar-left link-logo">
     <div class="nav navbar-nav menu-logo">
       <li class="nav-item">
         <%= link_to 'Go To Learn', user_path, class: 'nav-link' %>
@@ -10,11 +10,54 @@
     </div>
   </nav>
 
+  <!-- menu esquerda
+  <nav class="navbar navbar-left hidden-xs-down nav-search">
+    <div class="nav navbar-nav menu-logo">
+      <li class="nav-item transation-right">
+        <input class="form-control" type="text" placeholder=" &#xF002; Search">
+      </li>
+    </div>
+  </nav> -->
+
+
   <%= render '/users/menu-top-responsive' %>
 
 
+
+
+
   <nav class="navbar navbar-right">
-    <div class="nav navbar-nav menu-logo">
+    <div class="nav navbar-nav menu-actions">
+
+
+      <li class="nav-item">
+        <nav class="nav-search">
+          <li class="nav-item sc-small">
+            <input class="form-control" type="text" placeholder=" &#xF002;">
+          </li>
+        </nav>
+      </li>
+
+      <li class="nav-item">
+        <div class="btn-group">
+          <button type="button" class="btn-link icon-notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-comment-o" aria-hidden="true"></i>
+            <div class="label-notification">
+              <i class="label label-pill label-danger">3</i>
+            </div>
+          </button>
+
+          <div class="dropdown-menu pull-left">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+
+        </div>
+      </li>
+
       <li class="nav-item">
         <div class="btn-group">
           <button type="button" class="btn-link icon-notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -43,11 +86,11 @@
 
       <li class="nav-item hidden-xs-down">
 
-        <%= current_user.first_name %>
+
 
         <div class="btn-group">
           <button type="button" class="btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="sr-only">Menu</span>
+             <span><%= current_user.first_name %></span>
           </button>
           <div class="dropdown-menu pull-left">
             <a class="dropdown-item" href="#">Action</a>
@@ -62,8 +105,4 @@
 
     </div>
   </nav>
-
-
-
-
 </div>

@@ -19,25 +19,25 @@
         <div class="row">
           <fieldset class="form-group col-lg-6">
             <div class="field">
-              <%= f.text_field :first_name, autofocus: true, class: 'form-control', required: true, placeholder: 'First Name' %>
+              <%= f.text_field :first_name, class: 'form-control', required: true, placeholder: 'First Name' %>
             </div>
           </fieldset>
 
           <fieldset class="form-group col-lg-6">
             <div class="field">
-              <%= f.text_field :last_name, autofocus: true, class: 'form-control', required: true, placeholder: 'Last Name' %>
+              <%= f.text_field :last_name, class: 'form-control', required: true, placeholder: 'Last Name' %>
             </div>
           </fieldset>
         </div>
 
         <fieldset class="form-group">
           <div class="field">
-            <%= f.text_field :username, autofocus: true, class: 'form-control', required: true, placeholder: 'Username' %>
+            <%= f.text_field :username, class: 'form-control', required: true, placeholder: 'Username' %>
           </div>
         </fieldset>
 
         <fieldset class="form-group">
-          <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+          <%= f.email_field :email, class: 'form-control' %>
         </fieldset>
 
         <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
