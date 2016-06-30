@@ -1,0 +1,93 @@
+<nav class="menu-left-area">
+  <ul class="nav">
+    <li id="m-home" class="op-menu">
+      <div class="op-select">
+        <%= link_to user_path do %>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+          <span>Home</span>
+        <% end %>
+      </div>
+    </li>
+    <li id="m-feed" class="op-menu">
+      <div class="op-select">
+        <%= link_to user_path do %>
+          <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+          <span>Feed</span>
+        <% end %>
+      </div>
+    </li>
+    <li id="m-topics" class="op-menu">
+      <div class="op-select">
+        <%= link_to groups_path do %>
+          <i class="fa fa-bookmark" aria-hidden="true"></i>
+          <span>Groups</span>
+        <% end %>
+      </div>
+    </li>
+    <li id="m-ftopics" class="op-menu">
+      <div class="op-select">
+        <%= link_to user_path do %>
+          <i class="fa fa-heart" aria-hidden="true"></i>
+          <span>Favorite Groups</span>
+        <% end %>
+      </div>
+    </li>
+    <li id="m-friends" class="op-menu">
+      <div class="op-select">
+        <%= link_to user_path do %>
+          <i class="fa fa-users" aria-hidden="true"></i>
+          <span>Friends</span>
+        <% end %>
+      </div>
+    </li>
+    <li id="m-message" class="op-menu">
+      <div class="op-select">
+        <%= link_to user_path do %>
+          <i class="fa fa-comment" aria-hidden="true"></i>
+          <span>Messages</span>
+        <% end %>
+      </div>
+    </li>
+    <li id="m-blog" class="op-menu">
+      <div class="op-select">
+        <%= link_to user_path do %>
+          <i class="fa fa-rss-square" aria-hidden="true"></i>
+          <span>Your Blog</span>
+        <% end %>
+      </div>
+    </li>
+    <li id="m-annotations" class="op-menu">
+      <div class="op-select">
+        <%= link_to user_path do %>
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+          <span>Annotations</span>
+        <% end %>
+      </div>
+    </li>
+    <li id="m-events" class="op-menu">
+      <div class="op-select">
+        <%= link_to user_path do %>
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+          <span>Events</span>
+        <% end %>
+      </div>
+    </li>
+    <li id="m-acc" class="op-menu">
+      <div class="op-select">
+        <%= link_to edit_user_registration_path do %>
+          <i class="fa fa-cog" aria-hidden="true"></i>
+          <span>Account</span>
+        <% end %>
+      </div>
+    </li>
+    <li id="m-signout" class="op-menu">
+      <div class="op-select">
+        <%= link_to destroy_user_session_path, method: :delete do %>
+          <i class="fa fa-sign-out" aria-hidden="true"></i>
+          <span>Sign out</span>
+        <% end %>
+      </div>
+    </li>
+
+  </ul>
+</nav>

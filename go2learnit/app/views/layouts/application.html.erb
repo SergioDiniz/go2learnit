@@ -12,6 +12,11 @@
 
   <body>
 
+    <% if user_signed_in? %>
+      <%= render '/users/menu-top' %>
+      <%= render '/users/menu-left' %>
+    <% end %>
+
     <%= yield %>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', 'data-turbolinks-eval': false %>

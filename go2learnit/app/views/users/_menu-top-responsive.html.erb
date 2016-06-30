@@ -1,0 +1,22 @@
+<nav class="navbar navbar-right hidden-sm-up">
+  <div class="nav navbar-nav">
+    <li class="nav-item" id="btn-menu">
+      <div id="op-menu-responsive">
+        <a class="nav-link">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <div class="menu-responsive">
+          <div class="menu">
+            <nav>
+              <ul class="nav">
+                <li><%= link_to 'Home', user_path %></li>
+                <li><%= link_to 'Account', edit_user_registration_path %></li>
+                <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </li>
+  </div>
+</nav>

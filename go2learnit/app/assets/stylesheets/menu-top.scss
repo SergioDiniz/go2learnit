@@ -1,5 +1,49 @@
 @import 'collors';
 
+.dropdown-menu-sw{
+  margin-top: 1rem !important;
+  a{
+    margin-left: 0 !important;
+  }
+}
+
+.dropdown-menu-sw::before {
+    top: -16px;
+    right: 9px;
+    left: auto;
+}
+
+.dropdown-menu::before {
+    border: 8px solid transparent;
+    border-bottom-color: rgba(0,0,0,0.15);
+}
+
+.dropdown-menu::before, .dropdown-menu::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+}
+
+.dropdown-menu-sw::after {
+    top: -14px;
+    right: 10px;
+    left: auto;
+}
+
+.dropdown-menu::after {
+    border: 7px solid transparent;
+    border-bottom-color: #fff;
+}
+
+.dropdown-menu::before, .dropdown-menu::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+}
+
+
+
+
 .link-logo{
   padding: 0 !important;
   margin-left: 0.7rem;
