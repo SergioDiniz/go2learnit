@@ -1,4 +1,5 @@
 class Group < ApplicationRecord
+  # default_scope { eager_load(:user) }
   belongs_to :user
 
   validates_presence_of :title, :description
